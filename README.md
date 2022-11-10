@@ -8,7 +8,7 @@ On the server we use XAMPP so Apache with PHP and MySQL is available.
 
 ### Setup the database
 
-In order to setup of restore the database follow [these instructions](/database/README.md).
+In order to setup of restore the database follow [these instructions](/database/).
 
 ### Setup the application
 
