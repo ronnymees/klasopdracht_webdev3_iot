@@ -1,0 +1,56 @@
+html{
+    background-color: lightgray;
+}
+
+body{
+    width: 800px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+    font-family: Calibri;
+    font-size: 18px;
+}
+
+#banner{
+    margin: 0px;
+    border-bottom: 2px solid;
+    border-color:  rgb(224,0,32);
+}
+
+#logo {
+    margin: 5px;
+    height: 50px;
+    float: left;
+}
+
+.nobullet {
+    list-style-type: none;
+}
+
+#maintext h1 {
+    margin: 0px;
+    color: rgb(224,0,32);
+    font-family: aller;
+    font-size: 38px;
+    width: 100%;
+    text-align: center;
+}
+
+#maintext p {
+    margin: 0px;
+    margin-bottom: 50px;
+    color: black;
+    width: 100%;
+    text-align: center;
+}
+
+#info{
+    margin: 10px;
+    margin-bottom: 40px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 8px 16px 0px rgba(224,0,32,0.4);
+}

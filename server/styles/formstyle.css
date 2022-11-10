@@ -1,0 +1,107 @@
+/* Form error style */
+#formerror{
+  background-color: #ff8080;
+  padding: 2px;
+  color: white;
+  border-radius: 10px;
+  width: 98%;
+}
+
+/* General form style */
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+form .button{
+   height: 45px;
+   margin: 0
+}
+
+form .button input{
+   margin: 0;
+   height: 100%;
+   width: 98%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: linear-gradient(135deg, #5d85a2, #1e3147);
+}
+
+form .button input:hover{
+  background: linear-gradient(-135deg, #5d85a2, #1e3147);
+}
+
+label{  
+  margin: 10px;    
+}
+
+input{
+  padding: 5px;
+  border: 1px solid #7F8688;
+  border-radius: 4px;    
+}
+
+button, input[type=submit]{
+  margin-left: 25px;
+  color: #fff;
+  padding: 8px 10px;
+  text-align: center;
+  width: 150px;
+  border-radius: 6px; 
+  background: linear-gradient(135deg, #5d85a2, #1e3147);   
+}
+
+input[type=submit]:hover, button:hover{
+  background: linear-gradient(-135deg, #5d85a2, #1e3147);
+}
+
+/* Form in content style*/ 
+.content form {
+  margin-top: 10px;
+  color: #333;
+}
+
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+  max-height: 40vh;
+  overflow-y: scroll;
+}
+
+/* Form userdetails style */
+form .user-details .input-box{
+  margin-bottom: 15px; 
+  width: 100%; 
+  /*width: calc(100% / 2 - 20px);*/
+}
+
+.user-details .input-box input{
+  height: 20px;
+  width: 96%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: #1e3147;
+}
+
+.user-details::-webkit-scrollbar{
+    width: 5px;
+}
+ 

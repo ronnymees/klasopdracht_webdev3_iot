@@ -1,0 +1,214 @@
+/* General style */
+html{
+    background-color: #51535c
+}
+
+body {
+    background: white;
+    font-family: Helvetica,Arial,sans-serif;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1080px;
+    color: #333;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+li {
+    margin-left: 20px;
+}
+
+/* Header style */
+.wrapper {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)) ,  url("../images/webdevelopment1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 150px;
+    width: 1080px;
+    color: white;
+    text-align: center;    
+    display:table-cell;
+    vertical-align:middle;    
+}
+
+.wrapper h3{
+    font-size: 48px;
+    margin: 0;    
+}
+
+.wrapper p{
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Navbar style */
+.navbar ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 7px 0 7px 0;
+    overflow: hidden;
+    background-color: #0f1924;
+}
+
+.navbar li {
+    float: left;
+}
+  
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 6px 16px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid #7F8688;
+}
+    
+.navbar li a:hover {
+    background-color: #1e3147;
+}
+
+.active {
+    background-color: #5d85a2;
+}
+
+/* General container style */ 
+.container{
+    /*max-width: 700px;*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #5d85a2, #1e3147);
+}
+
+.content {
+    margin-top: 5px;
+}
+
+/* General table style */
+table{
+    width: 100%;
+}
+
+th{
+    height: 20px;
+}
+
+td{
+    height: 20px;
+    vertical-align:middle;
+    text-align: center;
+}
+
+/* Userinfo table style */
+#userinfotabel{
+    margin: 0;  
+    margin-top: 7px;  
+    padding-left: 10px;    
+    width: 70%;
+    min-width: 215px;
+    /*color: #fff;*/
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+.left {
+    border-radius: 10px;
+    border: 1px solid #1e3147;
+    padding: 5px;
+}
+
+.fluo{
+    background-color: #ffcc00;
+    height: 30px;    
+    border-radius: 10px;    
+    color: #331a00;
+    font-size: 25px;
+}
+
+/* Data table style */
+#datatabel{
+    margin: 0;
+    margin-bottom: 5px;
+    float: left;
+    padding: 10px;
+    width: 97%;
+    min-width: 215px;    
+}
+
+#datatabel th,#datatabel td{
+    border-bottom: 1px solid #ddd;
+}
+
+/* Footer style */
+.footer {
+    background-color: #1e3147;
+    text-align: center;
+    color: #fff;    
+    height: 50px;
+    padding: 10px;
+}
+
+/* Example style */
+.example{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    border: 1px solid #ffcc00;        
+    color: #331a00;
+    font-size: 12px;
+}
+
+.example h4 {
+    background-color: #fff;
+    border: 1px solid #ffcc00;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    top: -27px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

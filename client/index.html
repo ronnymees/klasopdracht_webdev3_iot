@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Klasopdracht - testpagina</title>
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+</head>
+
+<body>
+    <div id="interface">
+        <h1>Opvragen webapi data</h1>
+        <div id="selectie">
+            <label for="apikey">Your APIkey</label>
+            <input id="apikey" type="text" name="apikey">
+            <label for="startdatum">Start bij (incl.)</label>
+            <input id="startdatum" type="datetime-local" name="startdatum">
+            <label for="einddatum">Eindigd bij (excl.)</label>
+            <input id="einddatum" type="datetime-local" name="einddatum">
+            <button type="button" id="btnSelect">data ophalen</button>
+        </div>
+        <div id="resultaat">
+            <div id=datatabel>
+                <table>
+                    <thead>
+                        <tr><th>Datum</th><th>CO<sub>2</sub></th><th>Temp</th><th>Humidity</th></tr>
+                    </thead>
+                    <tbody id="tabelBody">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/script.js"> </script>
+</body>
+
+</html>
