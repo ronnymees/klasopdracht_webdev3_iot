@@ -12,12 +12,12 @@ In order to setup of restore the database follow [these instructions](/database/
 
 ### Setup the application
 
-In order to setup the web application follow [these instructions](/server/README.md)
+In order to setup the web application follow [these instructions](/server/)
 
 ## Setup a IoT device
 
-In order to setup a new IoT Device follow [these instructions](/iotdevice/README.md)
+In order to setup a new IoT Device follow [these instructions](/iotdevice/)
 
 ## Use the WEBapi 
 
-[Here](/client/README.md) you can see a basic use of the WEBapi in a client-side web application.
+[Here](/client/) you can see a basic use of the WEBapi in a client-side web application.
