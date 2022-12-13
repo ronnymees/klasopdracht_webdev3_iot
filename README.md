@@ -21,3 +21,37 @@ In order to setup a new IoT Device follow [these instructions](/iotdevice/)
 ## Use the WEBapi 
 
 [Here](/client/) you can see a basic use of the WEBapi in a client-side web application.
+
+## Docker
+
+Create `.env`file by copying `.env.example` and fill in the details.
+
+```bash
+cp .env.example .env
+```
+
+Launch the whole stack using docker-compose:
+
+```bash
+docker-compose up -d
+```
+
+If something changed in the source files you may need to force a build:
+
+```bash
+docker-compose up --build -d
+```
+
+To stop the stack:
+
+```bash
+docker-compose down
+```
+
+### Services
+
+The services in this stack are mapped as follows:
+
+* Client: [http://localhost:80](http://localhost:80)
+* Server: [http://localhost:8000](http://localhost:8000)
+* PhpMyAdmin: [http://localhost:8080](http://localhost:8080)
