@@ -27,7 +27,7 @@ services:
       - DB_HOST="database"
       - DB_USER=${DB_USER}
       - DB_USER_PASSWORD=${DB_USER_PASSWORD}
-      - DB_DATABASE=${DB_DATABASE}
+      - DB_NAME=${DB_NAME}
       - SENSOR_API_KEY=${SENSOR_API_KEY}
     ports:
       - "8000:80"
@@ -44,12 +44,14 @@ services:
       - MARIADB_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
       - MARIADB_USER=${DB_USER}
       - MARIADB_PASSWORD=${DB_USER_PASSWORD}
-      - MARIADB_DATABASE=${DB_DATABASE}
+      - MARIADB_DATABASE=${DB_NAME}
     volumes:
       - mariadb-data:/var/lib/mysql
     networks:
       - default
 
+  # Here we use the ready-to-use php-my-admin
+  # image served with apache web server.
   phpmyadmin:
     image: phpmyadmin:5.2.0-apache
     restart: unless-stopped
