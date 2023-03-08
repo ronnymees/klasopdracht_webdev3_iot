@@ -3,6 +3,9 @@
 # You can more info about this image @ https://hub.docker.com/_/php
 FROM php:7.2-apache
 
+# Install mysqli
+RUN docker-php-ext-install mysqli
+
 # Copy all files in the root of this server directory.
 # Files in .dockerignore are not copied
 COPY . /var/www/html

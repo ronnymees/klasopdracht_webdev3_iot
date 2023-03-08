@@ -24,7 +24,7 @@ services:
     depends_on: 
       - database
     environment:
-      - DB_HOST="database"
+      - DB_HOST=database
       - DB_USER=${DB_USER}
       - DB_USER_PASSWORD=${DB_USER_PASSWORD}
       - DB_NAME=${DB_NAME}
@@ -53,7 +53,7 @@ services:
   # Here we use the ready-to-use php-my-admin
   # image served with apache web server.
   phpmyadmin:
-    image: phpmyadmin:5.2.0-apache
+    image: phpmyadmin:5.2.1-apache
     restart: unless-stopped
     depends_on: 
       - database
