@@ -30,7 +30,11 @@ async function getData() {
     if (startDatum < eindDatum) {
         // Resultaat div visueel maken
         document.getElementById('resultaat').style.display = "block";
-        let url = "http://localhost:8000/webdev/klasopdracht/webapi.php?start="+startDatum+"&end="+eindDatum+"&apikey="+apikey;
+        
+        // In docker we cannot access the API via localhost as this refers to the
+        // docker container itself.
+        // However when we use docker-compose we get "free" name resolution based on the container name.
+        let url = "http://server:8000/webapi.php?start="+startDatum+"&end="+eindDatum+"&apikey="+apikey;
         console.log(url); 
         let response = await fetch(url);
         console.log(response);      

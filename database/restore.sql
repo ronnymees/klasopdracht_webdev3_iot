@@ -5,6 +5,7 @@ USE vives;
 -- instellen webuser en rechten toekennen
 CREATE USER 'webuser'@'localhost' IDENTIFIED BY "secretpassword";
 GRANT ALL PRIVILEGES ON vives.* TO 'webuser'@'localhost';
+FLUSH PRIVILEGES;
 
 -- aanmaken sensordata tabel
 CREATE TABLE sensordata (id INT(11) NOT NULL AUTO_INCREMENT,

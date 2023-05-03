@@ -1,7 +1,7 @@
 <?php
     // database credentials
-    $dbhost = 'localhost';
-    $dbuser = 'webuser';
-    $dbpass = 'secretpassword';
-    $dbname = 'vives';
+    $dbhost = $_ENV["DB_HOST"];
+    $dbuser = $_ENV["DB_USER"];
+    $dbpass = $_ENV["DB_USER_PASSWORD"];
+    $dbname = $_ENV["DB_NAME"];
 ?>

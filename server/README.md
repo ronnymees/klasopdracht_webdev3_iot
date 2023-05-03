@@ -9,7 +9,7 @@ This is the landing page of the application with general info of the project
 
 ## register.php
 
-Used to register a new user (a user = sensor exept for the admin user)
+Used to register a new user (a user = sensor except for the admin user)
 
 ## login.php
 
